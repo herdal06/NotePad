@@ -3,9 +3,11 @@ package com.herdal.notepad.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.herdal.notepad.R
 import com.herdal.notepad.model.Note
+import com.herdal.notepad.view.ListNoteFragmentDirections
 import kotlinx.android.synthetic.main.note_row.view.*
 
 class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
@@ -26,6 +28,12 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
         holder.itemView.textView_row_NoteTitle.text = note.title
         holder.itemView.textView_row_NoteContent.text = note.content
         holder.itemView.textView_row_CreationDate.text = note.creationDate
+
+        // navigate list to update fragment
+        holder.itemView.rowLayout.setOnClickListener {
+            val action = ListNoteFragmentDirections.actionListNoteFragmentToUpdateNoteFragment(note)
+            holder.itemView.findNavController().navigate(action)
+        }
     }
 
     override fun getItemCount(): Int {

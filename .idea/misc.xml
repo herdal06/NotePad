@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_add_note.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_list_note.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_update_note.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/note_row.xml" value="0.5" />
         <entry key="app/src/main/res/menu/delete_menu.xml" value="0.32314814814814813" />
       </map>

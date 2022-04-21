@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_listNoteFragment_to_addNoteFragment"
             app:destination="@id/addNoteFragment" />
+        <action
+            android:id="@+id/action_listNoteFragment_to_updateNoteFragment"
+            app:destination="@id/updateNoteFragment" />
     </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
@@ -22,5 +25,17 @@
         <action
             android:id="@+id/action_addNoteFragment_to_listNoteFragment"
             app:destination="@id/listNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateNoteFragment"
+        android:name="com.herdal.notepad.view.UpdateNoteFragment"
+        android:label="fragment_update_note"
+        tools:layout="@layout/fragment_update_note" >
+        <action
+            android:id="@+id/action_updateNoteFragment_to_listNoteFragment"
+            app:destination="@id/listNoteFragment" />
+        <argument
+            android:name="currentNote"
+            app:argType="com.herdal.notepad.model.Note" />
     </fragment>
 </navigation>
