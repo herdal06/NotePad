@@ -10,27 +10,43 @@
         tools:context=".view.AddNoteFragment">
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
-            android:layout_width="386dp"
-            android:layout_height="416dp"
+            android:id="@+id/editTextNote"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="#B3EAD2"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/button_add_note"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextNoteTitle" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_add_note"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
             android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextNote" />
+
+        <EditText
+            android:id="@+id/editTextNoteTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

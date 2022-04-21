@@ -18,7 +18,7 @@ class NoteViewModel(application: Application): AndroidViewModel(application) {
         repository = NoteRepository(noteDao)
     }
 
-    suspend fun addNote(note: Note) {
+    fun addNote(note: Note) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.addNote(note)
         }
