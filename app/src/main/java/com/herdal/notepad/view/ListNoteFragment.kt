@@ -1,10 +1,10 @@
 package com.herdal.notepad.view
 
+import android.app.AlertDialog
 import android.os.Bundle
+import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -38,6 +38,32 @@ class ListNoteFragment : Fragment() {
             findNavController().navigate(R.id.action_listNoteFragment_to_addNoteFragment)
         }
 
+        // add menu
+        setHasOptionsMenu(true)
+
         return view
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.delete_menu,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.menu_delete) {
+            deleteAllNotes()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun deleteAllNotes() {
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setPositiveButton("Yes") { _,_ ->
+            noteViewModel.deleteAllNotes()
+            Toast.makeText(requireContext(),"Successfully removed every notes!",Toast.LENGTH_SHORT).show()
+        }
+        builder.setNegativeButton("No") {_,_ ->}
+        builder.setTitle("This action cannot be undone.")
+        builder.setMessage("Are you sure you want to delete all the notes?")
+        builder.create().show()
     }
 }
