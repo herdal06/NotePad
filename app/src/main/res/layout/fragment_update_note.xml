@@ -11,39 +11,35 @@
         android:id="@+id/editTextUpdateNoteTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Title"
+        android:hint="@string/title"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUpdateNote" />
 
     <EditText
         android:id="@+id/editTextUpdateNote"
         android:layout_width="0dp"
         android:layout_height="290dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="#B3EAD2"
-        android:padding="6dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:padding="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUpdateNoteTitle" />
 
-    <Button
-        android:id="@+id/button_update_note"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Update"
+    <ImageView
+        android:id="@+id/imageViewUpdateNote"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_baseline_save_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateNote" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

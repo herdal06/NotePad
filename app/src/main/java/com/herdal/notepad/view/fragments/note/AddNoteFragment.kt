@@ -25,7 +25,7 @@ class AddNoteFragment : Fragment() {
 
         noteViewModel = ViewModelProvider(this).get(NoteViewModel::class.java)
 
-        view.button_add_note.setOnClickListener {
+        view.imageViewAddNote.setOnClickListener {
             insertNoteToDatabase()
         }
 

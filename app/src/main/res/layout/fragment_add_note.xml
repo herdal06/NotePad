@@ -13,37 +13,35 @@
             android:id="@+id/editTextNote"
             android:layout_width="0dp"
             android:layout_height="290dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:background="#B3EAD2"
-            android:padding="6dp"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
+            android:padding="6dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextNoteTitle" />
-
-        <Button
-            android:id="@+id/button_add_note"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Add"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNote" />
 
         <EditText
             android:id="@+id/editTextNoteTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="Title"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAddNote" />
+
+        <ImageView
+            android:id="@+id/imageViewAddNote"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_save_24" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

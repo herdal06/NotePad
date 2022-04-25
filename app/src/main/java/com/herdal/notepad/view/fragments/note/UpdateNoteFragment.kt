@@ -29,7 +29,7 @@ class UpdateNoteFragment : Fragment() {
         view.editTextUpdateNoteTitle.setText(args.currentNote.title)
         view.editTextUpdateNote.setText(args.currentNote.content)
 
-        view.button_update_note.setOnClickListener {
+        view.imageViewUpdateNote.setOnClickListener {
             updateNote()
         }
 
