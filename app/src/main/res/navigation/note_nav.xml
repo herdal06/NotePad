@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/note_nav"
-    app:startDestination="@id/listNoteFragment">
+    app:startDestination="@id/splashScreenFragment">
 
     <fragment
         android:id="@+id/listNoteFragment"
-        android:name="com.herdal.notepad.view.ListNoteFragment"
+        android:name="com.herdal.notepad.view.fragments.note.ListNoteFragment"
         android:label="Notes"
         tools:layout="@layout/fragment_list_note" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
-        android:name="com.herdal.notepad.view.AddNoteFragment"
+        android:name="com.herdal.notepad.view.fragments.note.AddNoteFragment"
         android:label="Add Note"
         tools:layout="@layout/fragment_add_note" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateNoteFragment"
-        android:name="com.herdal.notepad.view.UpdateNoteFragment"
+        android:name="com.herdal.notepad.view.fragments.note.UpdateNoteFragment"
         android:label="Update Note"
         tools:layout="@layout/fragment_update_note" >
         <action
@@ -37,5 +37,14 @@
         <argument
             android:name="currentNote"
             app:argType="com.herdal.notepad.model.Note" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.herdal.notepad.view.fragments.splash.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_listNoteFragment"
+            app:destination="@id/listNoteFragment" />
     </fragment>
 </navigation>

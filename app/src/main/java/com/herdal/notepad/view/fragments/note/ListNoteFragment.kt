@@ -1,4 +1,4 @@
-package com.herdal.notepad.view
+package com.herdal.notepad.view.fragments.note
 
 import android.app.AlertDialog
 import android.os.Bundle

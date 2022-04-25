@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.herdal.notepad.R
 import com.herdal.notepad.model.Note
-import com.herdal.notepad.view.ListNoteFragmentDirections
+import com.herdal.notepad.view.fragments.note.ListNoteFragmentDirections
 import kotlinx.android.synthetic.main.note_row.view.*
 
 class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {

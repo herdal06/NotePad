@@ -1,4 +1,4 @@
-package com.herdal.notepad.view
+package com.herdal.notepad.view.fragments.note
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -12,7 +12,6 @@ import androidx.navigation.fragment.navArgs
 import com.herdal.notepad.R
 import com.herdal.notepad.model.Note
 import com.herdal.notepad.viewmodel.NoteViewModel
-import kotlinx.android.synthetic.main.fragment_add_note.*
 import kotlinx.android.synthetic.main.fragment_update_note.*
 import kotlinx.android.synthetic.main.fragment_update_note.view.*
 

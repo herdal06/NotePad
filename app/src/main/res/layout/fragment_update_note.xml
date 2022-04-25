@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
-    tools:context=".view.UpdateNoteFragment">
+    tools:context=".view.fragments.note.UpdateNoteFragment">
 
     <EditText
         android:id="@+id/editTextUpdateNoteTitle"
