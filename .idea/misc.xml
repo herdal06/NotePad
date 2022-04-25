@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.3495" />
         <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2385" />
         <entry key="app/src/main/res/drawable/ic_edit_note.xml" value="0.224" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3415" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_add_note.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_list_note.xml" value="0.22" />
@@ -13,6 +14,8 @@
         <entry key="app/src/main/res/layout/fragment_update_note.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/note_row.xml" value="0.5" />
         <entry key="app/src/main/res/menu/delete_menu.xml" value="0.32314814814814813" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.206" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.206" />
       </map>
     </option>
   </component>

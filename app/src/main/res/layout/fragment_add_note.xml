@@ -15,6 +15,7 @@
             android:layout_height="290dp"
             android:layout_marginTop="8dp"
             android:background="#B3EAD2"
+            android:padding="6dp"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
