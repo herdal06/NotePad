@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">Ekle</string>
+    <string name="update">Güncelle</string>
+    <string name="title">Başlık</string>
+    <string name="addYourNote">Notunu buraya yazabilirsin.</string>
+    <string name="myNotes">Notlarım</string>
+    <string name="addNote">Not Ekle</string>
+    <string name="updateNote">Notu Güncelle</string>
+
+</resources>

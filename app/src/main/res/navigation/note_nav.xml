@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/listNoteFragment"
         android:name="com.herdal.notepad.view.fragments.note.ListNoteFragment"
-        android:label="Notes"
-        tools:layout="@layout/fragment_list_note" >
+        android:label="@string/myNotes"
+        tools:layout="@layout/fragment_list_note">
         <action
             android:id="@+id/action_listNoteFragment_to_addNoteFragment"
             app:destination="@id/addNoteFragment" />
@@ -20,8 +20,8 @@
     <fragment
         android:id="@+id/addNoteFragment"
         android:name="com.herdal.notepad.view.fragments.note.AddNoteFragment"
-        android:label="Add Note"
-        tools:layout="@layout/fragment_add_note" >
+        android:label="@string/addNote"
+        tools:layout="@layout/fragment_add_note">
         <action
             android:id="@+id/action_addNoteFragment_to_listNoteFragment"
             app:destination="@id/listNoteFragment" />
@@ -29,8 +29,8 @@
     <fragment
         android:id="@+id/updateNoteFragment"
         android:name="com.herdal.notepad.view.fragments.note.UpdateNoteFragment"
-        android:label="Update Note"
-        tools:layout="@layout/fragment_update_note" >
+        android:label="@string/updateNote"
+        tools:layout="@layout/fragment_update_note">
         <action
             android:id="@+id/action_updateNoteFragment_to_listNoteFragment"
             app:destination="@id/listNoteFragment" />
@@ -45,6 +45,8 @@
         tools:layout="@layout/fragment_splash_screen" >
         <action
             android:id="@+id/action_splashScreenFragment_to_listNoteFragment"
-            app:destination="@id/listNoteFragment" />
+            app:destination="@id/listNoteFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
