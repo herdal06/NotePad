@@ -48,28 +48,5 @@
             app:destination="@id/listNoteFragment"
             app:popUpTo="@id/splashScreenFragment"
             app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_splashScreenFragment_to_tasksFragment"
-            app:destination="@id/tasksFragment"
-            app:popUpTo="@id/splashScreenFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
-    <fragment
-        android:id="@+id/tasksFragment"
-        android:name="com.herdal.notepad.view.fragments.task.TasksFragment"
-        android:label="fragment_tasks"
-        tools:layout="@layout/fragment_tasks" >
-        <action
-            android:id="@+id/action_tasksFragment_to_editTaskFragment"
-            app:destination="@id/editTaskFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/editTaskFragment"
-        android:name="com.herdal.notepad.view.fragments.task.EditTaskFragment"
-        android:label="fragment_edit_task"
-        tools:layout="@layout/fragment_edit_task" >
-        <action
-            android:id="@+id/action_editTaskFragment_to_tasksFragment"
-            app:destination="@id/tasksFragment" />
     </fragment>
 </navigation>
